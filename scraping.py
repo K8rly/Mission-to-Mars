@@ -19,7 +19,7 @@ def scrape_all():
         "news_paragraph": news_paragraph,
         "featured_image": featured_image(browser),
         "facts": mars_facts(),
-        "hemispheres": hemisphere_image_urls,
+        "hemispheres": hemispheres(browser),
         "last_modified": dt.datetime.now()
     }
 
@@ -99,7 +99,7 @@ def mars_facts():
     return df.to_html(classes="table table-striped")
 
 
-def hemisphere(browser):
+def hemispheres(browser):
     url='https://marshemispheres.com/'
     browser.visit(url)
     

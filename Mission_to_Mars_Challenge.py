@@ -77,7 +77,6 @@ url = 'https://marshemispheres.com/'
 
 browser.visit(url)
 
-
 # 2. Create a list to hold the images and titles.
 hemisphere_image_urls = []
 
@@ -99,10 +98,8 @@ for i in range(0,4):
     hemisphere_image_urls.append(hemispheres)
     browser.back()
 
-
 # 4. Print the list that holds the dictionary of each image url and title.
 hemisphere_image_urls
-
 
 # 5. Quit the browser
 browser.quit()
